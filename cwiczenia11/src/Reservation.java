@@ -38,10 +38,6 @@ public class Reservation implements Displayable{
     @Override
     public String getDisplayText() {
         return String.format("%s | Student: %s | Sprzęt: %s | %d dni | Status: %s",
-                id,student.getFullName(),
-                equipment.getName(),
-                days,
-                status
-        );
+                id,student.getFullName(), equipment.getName(), days, status);
     }
 }

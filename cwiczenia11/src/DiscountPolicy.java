@@ -1,3 +1,3 @@
 public interface DiscountPolicy {
-    double applyDiscount(student student, double price);
+    double applyDiscount(Student student, double price);
 }
