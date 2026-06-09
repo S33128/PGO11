@@ -50,7 +50,7 @@ public class ReservationService {
         System.out.println();
         System.out.println("Utworzono rezerwacje" + reservationId);
         System.out.println("Sprzet: " + equipment.getName());
-        System.out.println("Koszt: %.2f PLN%n" + cost);
+        System.out.println("Koszt:" + cost +  "PLN");
         System.out.println("Status: " + reservation.getStatus());
         return reservation;
     }
@@ -135,7 +135,7 @@ public class ReservationService {
         if (!found) {
             System.out.println("Brak zakonczonych rezerwacji");
         }
-        System.out.println("%nŁączny przychod: %.2f PLN%n" + revenue);
+        System.out.println("Łączny przychod: "+ revenue + " PLN");
         Student bestStudent = students.stream().max(Comparator.comparingInt(Student::getLoyaltyPoints)).orElse(null);
         if (bestStudent != null) {
             System.out.println("Najwiecej punktow posiada:");
